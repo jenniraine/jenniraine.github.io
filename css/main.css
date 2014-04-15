@@ -266,6 +266,10 @@ body {
 	.timeline-event .year {
 		width: 160px;
 	}
+
+	.timeline-event {
+		opacity: 0;
+	}
 }
 
 @media (min-width: 1250px) {

@@ -50,6 +50,30 @@ $(document).ready(function() {
 						.addTo(controller);
 	scene.addIndicators();
 
+	//
+	// Timeline tween!
+	//
+	var additionalOffset = 0;
+	var timelineTweens = $(".timeline-event").map(function(index, timelineEventEl) {
+		// Fade in
+		var tween = new TimelineMax()
+			.add(TweenMax.to(timelineEventEl, 1, {opacity: "1", ease: Linear.easeNone}));
+		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 50, offset: -300 + additionalOffset})
+			.setTween(tween)
+			.addTo(controller);
+		scene.addIndicators();
+
+		// Fade out
+		var tween = new TimelineMax()
+			.add(TweenMax.to(timelineEventEl, 1, {opacity: "0", ease: Linear.easeNone}));
+		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 50, offset: 100 + additionalOffset})
+			.setTween(tween)
+			.addTo(controller);
+		scene.addIndicators();
+
+		additionalOffset += 50 * ($(window).height()/1200);
+	});
+
 	$(window).resize(function() {
 		toggleScrollMagic();
 		scaleIntroSectionHeight();
