@@ -5,6 +5,7 @@ var MOBILE_WIDTH = 1024;
 var toggleScrollMagic = function() {
 	if($(window).width() <= MOBILE_WIDTH) {
 		controller.enabled(false);
+		$(".section-background").css("top", "");
 	} else {
 		controller.enabled(true);
 	}

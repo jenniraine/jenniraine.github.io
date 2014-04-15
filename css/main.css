@@ -1,5 +1,6 @@
 body {
 	font-family: 'Dosis', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
 }
 
 .content-section {
@@ -82,7 +83,52 @@ body {
 	width: 300px;
 }
 
-@media (max-width: 1024px) {
+.row-md-1 {
+	height: 42px;
+}
+
+.row-md-2 {
+	height: 84px;
+}
+
+.row-md-3 {
+	height: 126px;
+}
+
+.row-md-4 {
+	height: 168px;
+}
+
+.row-md-5 {
+	height: 210px;
+}
+
+.row-md-6 {
+	height: 252px;
+}
+
+.row-md-reverse-1 {
+	margin-top: -42px;
+}
+
+.row-md-reverse-1-plus {
+	margin-top: -62px;
+	margin-bottom: 20px;
+}
+
+.row-md-reverse-2 {
+	margin-top: -84px;
+}
+
+.row-md-reverse-3 {
+	margin-top: -126px;
+}
+
+.row-md-reverse-4 {
+	margin-top: -168px;
+}
+
+@media (max-width: 991px) {
 	.section-background {
 		position: inherit;
 		overflow: hidden;
@@ -111,9 +157,80 @@ body {
 	.post-intro {
 		display: none;
 	}
+
+	/* Timeline mobile styles */
+	.year-bar {
+		display: none;
+	}
+
+	.timeline-event {
+		padding-top: 1em;
+	}
+
+	.timeline-event.first {
+		padding-top: 0;
+	}
+
+	.timeline-event.last .event-description {
+		border-bottom: none;
+	}
+
+	.event-description {
+		border-bottom: 1px dotted white;
+	}
+
+	.timeline-event .year {
+		text-align: left;
+		font-weight: bold;
+	}
+
+	.row-md-1 {
+		height: inherit;
+	}
+
+	.row-md-2 {
+		height: inherit;
+	}
+
+	.row-md-3 {
+		height: inherit;
+	}
+
+	.row-md-4 {
+		height: inherit;
+	}
+
+	.row-md-5 {
+		height: inherit;
+	}
+
+	.row-md-6 {
+		height: inherit;
+	}
+
+	.row-md-reverse-1 {
+		margin-top: inherit;
+	}
+
+	.row-md-reverse-1-plus {
+		margin-top: inherit;
+		margin-bottom: inherit;
+	}
+
+	.row-md-reverse-2 {
+		margin-top: inherit;
+	}
+
+	.row-md-reverse-3 {
+		margin-top: inherit;
+	}
+
+	.row-md-reverse-4 {
+		margin-top: inherit;
+	}
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 992px) {
 	.section-background {
 		position: absolute;
 		float: left;
@@ -176,49 +293,4 @@ body {
 	.intro {
 		max-height: 700px;
 	}
-}
-
-.row-md-1 {
-	height: 42px;
-}
-
-.row-md-2 {
-	height: 84px;
-}
-
-.row-md-3 {
-	height: 126px;
-}
-
-.row-md-4 {
-	height: 168px;
-}
-
-.row-md-5 {
-	height: 210px;
-}
-
-.row-md-6 {
-	height: 252px;
-}
-
-.row-md-reverse-1 {
-	margin-top: -42px;
-}
-
-.row-md-reverse-1-plus {
-	margin-top: -62px;
-	margin-bottom: 20px;
-}
-
-.row-md-reverse-2 {
-	margin-top: -84px;
-}
-
-.row-md-reverse-3 {
-	margin-top: -126px;
-}
-
-.row-md-reverse-4 {
-	margin-top: -168px;
 }
