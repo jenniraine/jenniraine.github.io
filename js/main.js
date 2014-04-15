@@ -5,7 +5,8 @@ var MOBILE_WIDTH = 1024;
 var toggleScrollMagic = function() {
 	if($(window).width() <= MOBILE_WIDTH) {
 		controller.enabled(false);
-		$(".section-background").css("top", "");
+		// Revert any half-tweened elements
+		$(".section-background, .timeline-event").css({"top": "", "opacity": 1});
 	} else {
 		controller.enabled(true);
 	}
@@ -57,8 +58,8 @@ $(document).ready(function() {
 	var timelineTweens = $(".timeline-event").map(function(index, timelineEventEl) {
 		// Fade in
 		var tween = new TimelineMax()
-			.add(TweenMax.to(timelineEventEl, 1, {opacity: "1", ease: Linear.easeNone}));
-		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 50, offset: -300 + additionalOffset})
+			.add(TweenMax.to(timelineEventEl, 1, {opacity: "1", top: "-30px", ease: Linear.easeNone}));
+		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 125, offset: -300 + additionalOffset})
 			.setTween(tween)
 			.addTo(controller);
 		scene.addIndicators();
@@ -66,12 +67,12 @@ $(document).ready(function() {
 		// Fade out
 		var tween = new TimelineMax()
 			.add(TweenMax.to(timelineEventEl, 1, {opacity: "0", ease: Linear.easeNone}));
-		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 50, offset: 100 + additionalOffset})
+		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 125, offset: 100 + additionalOffset})
 			.setTween(tween)
 			.addTo(controller);
 		scene.addIndicators();
 
-		additionalOffset += 50 * ($(window).height()/1200);
+		additionalOffset += 45 * ($(window).height()/1200);
 	});
 
 	$(window).resize(function() {

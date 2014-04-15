@@ -154,6 +154,10 @@ body {
 		color: #fff;
 	}
 
+	.triple-arrow {
+		display: none;
+	}
+
 	.post-intro {
 		display: none;
 	}
@@ -244,6 +248,10 @@ body {
 		max-height: 700px;
 	}
 
+	.triple-arrow {
+		width: 85px;
+	}
+
 	.post-intro {
 		background-color: #dd6064; /* light red */
 		height: 4em;
@@ -270,11 +278,27 @@ body {
 	.timeline-event {
 		opacity: 0;
 	}
+
+	.triple-arrow {
+		width: 65px;
+	}
+
+	.triple-arrow-wrapper {
+		padding-top: 5px;
+	}
 }
 
 @media (min-width: 1250px) {
 	.intro-message { 
 		padding-top: 4%;
+	}
+
+	.triple-arrow {
+		width: 100px;
+	}
+
+	.triple-arrow-wrapper {
+		padding-top: 50px;
 	}
 }
 
@@ -296,5 +320,9 @@ body {
 
 	.intro {
 		max-height: 700px;
+	}
+
+	.triple-arrow-wrapper {
+		padding-top: 55px;
 	}
 }
