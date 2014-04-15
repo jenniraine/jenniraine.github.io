@@ -8,7 +8,7 @@ body {
 }
 
 .intro {
-	background-color: #FFFBF0;
+	background-color: #dd6064;
 }
 
 .intro p {
@@ -23,7 +23,18 @@ body {
 .timeline {
 	background-color: #6cb5ac;
 	border-bottom: 4px solid pink;
-	min-height: 1400px;
+	padding-top: 29px;
+	/*min-height: 1600px;*/
+}
+
+.timeline-event {
+	font-size: 1.5em;
+}
+
+.timeline-event .year {
+	text-align: right;
+	padding-right: 10px;
+	margin-bottom: 0;
 }
 
 .year-bar {
@@ -59,7 +70,6 @@ body {
 
 .section-background {
 	position: absolute;
-	/*float: left;*/
 	left: 0;
 	top: 0;
 	overflow: hidden;
@@ -121,6 +131,24 @@ body {
 		background-color: #dd6064; /* light red */
 		height: 4em;
 	}
+
+	.event-description {
+		background-color: #67a098;
+		border-radius: 7px;
+		text-align: center;
+		padding-top: 10px;
+		padding-bottom: 1px;
+		padding-left: 5px;
+		padding-right: 5px;
+		width: 160px;
+		-moz-box-shadow: 0px 2px 2px rgba(0,0,0,.4);
+        -webkit-box-shadow: 0px 2px 2px rgba(0,0,0,.4);
+        box-shadow: 0px 2px 2px rgba(0,0,0,.4);
+	}
+
+	.timeline-event .year {
+		width: 160px;
+	}
 }
 
 @media (min-width: 1250px) {
@@ -148,4 +176,49 @@ body {
 	.intro {
 		max-height: 700px;
 	}
+}
+
+.row-md-1 {
+	height: 42px;
+}
+
+.row-md-2 {
+	height: 84px;
+}
+
+.row-md-3 {
+	height: 126px;
+}
+
+.row-md-4 {
+	height: 168px;
+}
+
+.row-md-5 {
+	height: 210px;
+}
+
+.row-md-6 {
+	height: 252px;
+}
+
+.row-md-reverse-1 {
+	margin-top: -42px;
+}
+
+.row-md-reverse-1-plus {
+	margin-top: -62px;
+	margin-bottom: 20px;
+}
+
+.row-md-reverse-2 {
+	margin-top: -84px;
+}
+
+.row-md-reverse-3 {
+	margin-top: -126px;
+}
+
+.row-md-reverse-4 {
+	margin-top: -168px;
 }
