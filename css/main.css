@@ -1,0 +1,91 @@
+.content-section {
+	color: #fff;
+	position: relative;
+}
+
+.intro {
+	background-color: #F7A48B;
+}
+
+.intro p {
+	font-size:2em;
+	padding-top:0.5em;
+}
+
+.intro-message {
+	padding-top: 0;
+}
+
+.timeline {
+	background-color: blue;
+	border-bottom: 4px solid pink;
+	height: 500px;
+}
+
+.facts {
+	color: #000;
+	background-color: #fff;
+	min-height: 800px;
+}
+
+.facts li {
+	list-style-type: none;
+	font-size: 1.5em;
+}
+
+.section-background {
+	position: absolute;
+	float: left;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	width: 100%;
+}
+
+.section-background.centered {
+	top: 450px;
+	left: 600px;
+	width: 300px;
+}
+
+@media (max-width: 1024px) {
+	.section-background {
+		position: inherit;
+		crop: rect(0, 100, 0, 0);
+		overflow: hidden;
+	}
+
+	.intro {
+		max-height: none;
+	}
+
+	.intro-message {
+	}
+}
+
+@media (min-width: 1025px) {
+	.section-background {
+		position: absolute;
+		float: left;
+		left: 0;
+		top: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.intro {
+		max-height: 700px;
+	}
+}
+
+@media (min-width: 1250px) {
+	.intro-message { 
+		padding-top: 4%;
+	}
+}
+
+@media (min-width: 1400px) {
+	.intro-message { 
+		padding-top: 7%;
+	}
+}
