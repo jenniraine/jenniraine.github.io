@@ -1,10 +1,14 @@
+body {
+	font-family: 'Dosis', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 .content-section {
 	color: #fff;
 	position: relative;
 }
 
 .intro {
-	background-color: #F7A48B;
+	background-color: #FFFBF0;
 }
 
 .intro p {
@@ -17,9 +21,29 @@
 }
 
 .timeline {
-	background-color: blue;
+	background-color: #6cb5ac;
 	border-bottom: 4px solid pink;
-	height: 500px;
+	min-height: 1400px;
+}
+
+.year-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	padding-top: 0.5em;
+	list-style: none;
+	font-size: 1.5em;
+}
+
+.year-bar li:before {
+	content: "\2014";
+	margin: 0 0.5em;
+	margin-left: 0;
+}
+
+.year-bar li {
+	height: 42px;
 }
 
 .facts {
@@ -35,7 +59,7 @@
 
 .section-background {
 	position: absolute;
-	float: left;
+	/*float: left;*/
 	left: 0;
 	top: 0;
 	overflow: hidden;
@@ -51,15 +75,31 @@
 @media (max-width: 1024px) {
 	.section-background {
 		position: inherit;
-		crop: rect(0, 100, 0, 0);
 		overflow: hidden;
 	}
 
 	.intro {
+		background-color: #dd6064; /* light red */
 		max-height: none;
 	}
 
+	.intro p {
+		font-size:1.5em;
+		padding: 1em;
+		padding-left: 0;
+	}
+
+	.intro h1 {
+		padding-left: 0;
+		font-size: 2em;
+	}
+
 	.intro-message {
+		color: #fff;
+	}
+
+	.post-intro {
+		display: none;
 	}
 }
 
@@ -76,6 +116,11 @@
 	.intro {
 		max-height: 700px;
 	}
+
+	.post-intro {
+		background-color: #dd6064; /* light red */
+		height: 4em;
+	}
 }
 
 @media (min-width: 1250px) {
@@ -87,5 +132,20 @@
 @media (min-width: 1400px) {
 	.intro-message { 
 		padding-top: 7%;
+	}
+}
+
+@media (min-width: 1800px) {
+	.section-background {
+		position: absolute;
+		float: left;
+		left: 0;
+		top: 0;
+		overflow: hidden;
+		width: 100%;
+	}
+
+	.intro {
+		max-height: 700px;
 	}
 }
