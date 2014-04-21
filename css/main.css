@@ -3,6 +3,39 @@ body {
 	font-weight: 200;
 }
 
+/* Footer */
+
+.footer {
+	background-color: #272a32;
+	color: #fff;
+	/*height: 200px;*/
+	padding: 1em;
+}
+
+.social-links {
+	/*text-transform: uppercase;*/
+	font-size: 18px;
+}
+
+.social-links span {
+	font-weight: bold;
+}
+
+.social-links ul {
+	list-style-type: none;
+	padding-left: 0;
+	display: inline;
+}
+
+.social-links li {
+	display: inline;
+	padding-left: 1em;
+}
+
+.social-links a {
+	color: #fff;
+}
+
 .content-section {
 	color: #fff;
 	position: relative;
@@ -23,9 +56,7 @@ body {
 
 .timeline {
 	background-color: #6cb5ac;
-	/*border-bottom: 4px solid pink;*/
 	padding-top: 29px;
-	/*min-height: 1600px;*/
 }
 
 .timeline-event {
@@ -46,11 +77,6 @@ body {
 	padding-top: 0.5em;
 	list-style: none;
 	font-size: 1.5em;
-}
-
-.footer {
-	background-color: #272a32;
-	height: 400px;
 }
 
 .year-bar li:before {
@@ -132,6 +158,20 @@ blockquote b:before {
 
 .quotes {
 	background-color: #272a32;
+}
+
+/* Thanks */
+
+.thanks {
+	padding-top: 2em;
+	background: url("../images/skylights-web.jpg") no-repeat center top;
+	background-size: cover;
+	height: 400px;
+	overflow: hidden;
+}
+
+.thanks p {
+	font-size: 1.5em;
 }
 
 /* Timeline grid */
