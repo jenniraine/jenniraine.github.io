@@ -1,5 +1,5 @@
 var WIDESCREEN_WIDTH = 1600;
-var MOBILE_WIDTH = 1024;
+var MOBILE_WIDTH = 992;
 
 // Disable scroll magic on small view ports
 var toggleScrollMagic = function() {
@@ -42,11 +42,11 @@ $(document).ready(function() {
 	// build tween
 	var tween = new TimelineMax()
 		.add([
-			TweenMax.to(".intro img", 1, {top: "-350px", ease: Linear.easeNone})
+			TweenMax.to(".intro img", 1, {top: "-400px", ease: Linear.easeNone})
 		]);
 
 	// build scene
-	var scene = new ScrollScene({triggerElement: ".timeline", duration: 600, offset: 0})
+	var scene = new ScrollScene({triggerElement: ".timeline", duration: 300, offset: 0})
 						.setTween(tween)
 						.addTo(controller);
 	scene.addIndicators();
