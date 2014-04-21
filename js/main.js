@@ -42,11 +42,25 @@ $(document).ready(function() {
 	// build tween
 	var tween = new TimelineMax()
 		.add([
-			TweenMax.to(".intro img", 1, {top: "-400px", ease: Linear.easeNone})
+			TweenMax.to(".intro img", 1, {top: "-300px", ease: Linear.easeNone})
 		]);
 
 	// build scene
 	var scene = new ScrollScene({triggerElement: ".timeline", duration: 300, offset: 0})
+						.setTween(tween)
+						.addTo(controller);
+	scene.addIndicators();
+
+	// 
+	// Arrow tween
+	// 
+	var tween = new TimelineMax()
+		.add([
+			TweenMax.to(".intro .triple-arrow", 0.5, {opacity: 0, ease: Linear.easeNone})
+		]);
+
+	// build scene
+	var scene = new ScrollScene({triggerElement: ".timeline", offset: 30})
 						.setTween(tween)
 						.addTo(controller);
 	scene.addIndicators();
