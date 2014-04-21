@@ -223,6 +223,18 @@ blockquote b:before {
 	margin-top: -168px;
 }
 
+/* 
+	Vertical mobile phones
+*/
+@media (max-width: 700px) {
+	.thanks {
+		background-size: initial;
+	}
+}
+
+/*
+	Tablets and smaller
+*/
 @media (max-width: 991px) {
 	.section-background {
 		position: inherit;
@@ -369,6 +381,9 @@ blockquote b:before {
 	}
 }
 
+/*
+	Desktops
+*/
 @media (min-width: 992px) {
 	.section-background {
 		position: absolute;
@@ -538,6 +553,9 @@ blockquote b:before {
 	}*/
 }
 
+/*
+	Various larger desktops
+*/
 @media (min-width: 1250px) {
 	.intro-message { 
 		padding-top: 4%;
