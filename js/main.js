@@ -49,7 +49,6 @@ $(document).ready(function() {
 	var scene = new ScrollScene({triggerElement: ".timeline", duration: 300, offset: 0})
 						.setTween(tween)
 						.addTo(controller);
-	scene.addIndicators();
 
 	// 
 	// Arrow tween
@@ -63,7 +62,6 @@ $(document).ready(function() {
 	var scene = new ScrollScene({triggerElement: ".timeline", offset: 30})
 						.setTween(tween)
 						.addTo(controller);
-	scene.addIndicators();
 
 	//
 	// Timeline tween!
@@ -76,7 +74,6 @@ $(document).ready(function() {
 		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 125, offset: -300 + additionalOffset})
 			.setTween(tween)
 			.addTo(controller);
-		scene.addIndicators();
 
 		// Fade out
 		var tween = new TimelineMax()
@@ -84,7 +81,6 @@ $(document).ready(function() {
 		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 125, offset: 100 + additionalOffset})
 			.setTween(tween)
 			.addTo(controller);
-		scene.addIndicators();
 
 		additionalOffset += 45 * ($(window).height()/1200);
 	});
