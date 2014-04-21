@@ -88,6 +88,11 @@ body {
 	width: 300px;
 }
 
+.post-intro {
+	background-color: #dd6064; /* light red */
+	padding: 10px;
+}
+
 .row-md-1 {
 	height: 42px;
 }
@@ -164,7 +169,12 @@ body {
 	}
 
 	.post-intro {
-		display: none;
+		border-top: 1px solid #fff;
+	}
+
+	.post-intro p {
+		font-size: 1.5em;
+		padding: 0;
 	}
 
 	/* Timeline mobile styles */
@@ -257,9 +267,10 @@ body {
 		width: 85px;
 	}
 
-	.post-intro {
-		background-color: #dd6064; /* light red */
-		height: 4em;
+	.post-intro p {
+		font-size: 2em;
+		text-align: center;
+		vertical-align: middle;
 	}
 
 	.event-description {
@@ -301,6 +312,47 @@ body {
 	    margin: auto;
 	    position: absolute;
 	    top: 0; left: 0; bottom: 0; right: 0;
+	}
+
+	.personal-attribute-wrapper {
+		width: 992px;
+		height: 1000px;
+		position:relative;
+	    margin: auto;
+	}
+
+	.personal-attribute {
+		position: absolute;
+		text-align: center;
+		width: 275px;
+	}
+
+	.personal-attribute img {
+		width: 75%;
+	}
+
+	.personal-attribute p {
+		font-size: 1.2em;
+	}
+
+	#running-shoes {
+		top: 10%;
+		left: 10%;
+	}
+
+	#books {
+		bottom: 10%;
+		left: 10%;
+	}
+
+	#theatre {
+		top: 10%;
+		right: 10%;
+	}
+
+	#blog {
+		bottom: 10%;
+		right: 10%;
 	}
 }
 
