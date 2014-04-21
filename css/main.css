@@ -48,6 +48,11 @@ body {
 	font-size: 1.5em;
 }
 
+.footer {
+	background-color: #272a32;
+	height: 400px;
+}
+
 .year-bar li:before {
 	content: "\2014";
 	margin: 0 0.5em;
@@ -285,6 +290,17 @@ body {
 
 	.triple-arrow-wrapper {
 		padding-top: 5px;
+	}
+
+	.circle-profile {
+		-moz-border-radius: 50%;
+    	-webkit-border-radius: 50%;
+	    border-radius: 50%;
+	    height: 150px;
+	    overflow: auto;
+	    margin: auto;
+	    position: absolute;
+	    top: 0; left: 0; bottom: 0; right: 0;
 	}
 }
 
