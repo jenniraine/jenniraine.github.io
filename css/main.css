@@ -203,6 +203,21 @@ body {
 		font-weight: bold;
 	}
 
+	/* Traits */
+	.dashed-x, .personal-attribute img, .circle-profile {
+		display:none;
+	}
+
+	.facts {
+		font-size: 1.5em;
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-bottom: 1em;
+		min-height: 0;
+	}
+
+	/* Timeline grid reset */
+
 	.row-md-1 {
 		height: inherit;
 	}
