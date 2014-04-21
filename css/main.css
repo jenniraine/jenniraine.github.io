@@ -303,6 +303,18 @@ body {
 		padding-top: 5px;
 	}
 
+	.dashed-x {
+		-moz-border-radius: 50%;
+    	-webkit-border-radius: 50%;
+	    border-radius: 50%;
+	    height: 150px;
+	    overflow: auto;
+	    margin: auto;
+	    position: absolute;
+	    top: 0; left: 0; bottom: 0; right: 0;
+	    z-index: 100;
+	}
+
 	.circle-profile {
 		-moz-border-radius: 50%;
     	-webkit-border-radius: 50%;
@@ -312,6 +324,7 @@ body {
 	    margin: auto;
 	    position: absolute;
 	    top: 0; left: 0; bottom: 0; right: 0;
+	    z-index: 100;
 	}
 
 	.personal-attribute-wrapper {
@@ -354,6 +367,55 @@ body {
 		bottom: 10%;
 		right: 10%;
 	}
+
+	.connector {
+		border: 0;
+		border-bottom: 3px dashed #ccc;
+		height: 3px;
+		position: absolute;
+	}
+	
+	#running-shoes-connector {
+		width: 400px;
+		-webkit-transform: rotate(-45deg);
+		top: 500px;
+		left: 275px;
+	}
+
+	#books-connector {
+		width: 400px;
+		-webkit-transform: rotate(45deg);
+		top: 490px;
+		left: 310px;
+	}
+
+	/*#running-shoes-connector {
+		width: 200px;
+		-webkit-transform: rotate(-45deg);
+		top: 555px;
+		left: 325px;
+	}
+
+	#books-connector {
+		width: 200px;
+		-webkit-transform: rotate(45deg);
+		top: 410px;
+		left: 325px;
+	}
+
+	#theatre-connector {
+		width: 165px;
+		-webkit-transform: rotate(315deg);
+		top: 425px;
+		right: 355px;
+	}
+
+	#blog-connector {
+		width: 200px;
+		-webkit-transform: rotate(-315deg);
+		top: 560px;
+		right: 315px;
+	}*/
 }
 
 @media (min-width: 1250px) {
