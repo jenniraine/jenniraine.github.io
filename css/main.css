@@ -23,7 +23,7 @@ body {
 
 .timeline {
 	background-color: #6cb5ac;
-	border-bottom: 4px solid pink;
+	/*border-bottom: 4px solid pink;*/
 	padding-top: 29px;
 	/*min-height: 1600px;*/
 }
@@ -92,6 +92,49 @@ body {
 	background-color: #dd6064; /* light red */
 	padding: 10px;
 }
+
+/* Quotes */
+
+.open-quote img {
+	position: absolute;
+	top: 35px;
+	left: -15px;
+	width: 102px;
+}
+
+blockquote {
+	border: 0;
+	margin: 1.5em 10px;
+	padding: 0.5em 10px;
+	font-size: 2em;
+}
+
+blockquote p {
+	display: inline;
+}
+
+blockquote b {
+	display: block;
+	text-align: right;
+	font-weight: normal;
+	font-style: italic;
+	padding-top: 10px;
+}
+
+blockquote b:before {
+	content: "\2014";
+	padding-right: 7px;
+}
+
+.relative {
+	position: relative;
+}
+
+.quotes {
+	background-color: #272a32;
+}
+
+/* Timeline grid */
 
 .row-md-1 {
 	height: 42px;
@@ -214,6 +257,19 @@ body {
 		padding-right: 15px;
 		padding-bottom: 1em;
 		min-height: 0;
+	}
+
+	/* Quotes */
+
+	blockquote {
+		padding-left: 25px;
+		padding-right: 25px;
+		font-size: 1.5em;
+	}
+
+	blockquote b {
+		padding-top: 1em;
+		font-size: 16px;
 	}
 
 	/* Timeline grid reset */
