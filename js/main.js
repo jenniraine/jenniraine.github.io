@@ -29,11 +29,8 @@ var scaleIntroSectionHeight = function() {
 		$introSection.height(scaledHeight);
 		var $message = $introSection.find(".intro-message");
 	} else {
-		console.log("at widescreen width");
 		$introSection.height(maxHeight);
 	}
-
-	console.log("Height of intro section is: ", $introSection.height());
 };
 
 

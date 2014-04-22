@@ -155,7 +155,7 @@ blockquote b:before {
 	padding-top: 2em;
 	background: url("../images/skylights-web.jpg") no-repeat center top;
 	background-size: cover;
-	height: 400px;
+	min-height: 400px;
 	overflow: hidden;
 }
 
