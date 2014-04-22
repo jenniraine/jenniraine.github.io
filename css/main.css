@@ -403,7 +403,7 @@ blockquote b:before {
 	}
 
 	.post-intro p {
-		font-size: 2em;
+		font-size: 1.3em;
 		text-align: center;
 		vertical-align: middle;
 	}
@@ -523,34 +523,6 @@ blockquote b:before {
 		top: 490px;
 		left: 310px;
 	}
-
-	/*#running-shoes-connector {
-		width: 200px;
-		-webkit-transform: rotate(-45deg);
-		top: 555px;
-		left: 325px;
-	}
-
-	#books-connector {
-		width: 200px;
-		-webkit-transform: rotate(45deg);
-		top: 410px;
-		left: 325px;
-	}
-
-	#theatre-connector {
-		width: 165px;
-		-webkit-transform: rotate(315deg);
-		top: 425px;
-		right: 355px;
-	}
-
-	#blog-connector {
-		width: 200px;
-		-webkit-transform: rotate(-315deg);
-		top: 560px;
-		right: 315px;
-	}*/
 }
 
 /*
@@ -568,11 +540,19 @@ blockquote b:before {
 	.triple-arrow-wrapper {
 		padding-top: 50px;
 	}
+
+	.post-intro p {
+		font-size: 1.5em;
+	}
 }
 
 @media (min-width: 1400px) {
 	.intro-message { 
 		padding-top: 7%;
+	}
+
+	.post-intro p {
+		font-size: 1.8em;
 	}
 }
 
