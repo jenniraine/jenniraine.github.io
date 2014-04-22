@@ -523,6 +523,10 @@ blockquote b:before {
 		top: 490px;
 		left: 310px;
 	}
+
+	.thanks {
+		/*background-position: 0% 30%;*/
+	}
 }
 
 /*
@@ -553,6 +557,10 @@ blockquote b:before {
 
 	.post-intro p {
 		font-size: 1.8em;
+	}
+
+	.thanks {
+		background-position: 0% 65%;
 	}
 }
 
