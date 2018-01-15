@@ -75,11 +75,11 @@ $(document).ready(function() {
 		// Fade out
 		var tween = new TimelineMax()
 			.add(TweenMax.to(timelineEventEl, 1, {opacity: "0", ease: Linear.easeNone}));
-		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 125, offset: 100 + additionalOffset})
+		var scene = new ScrollScene({triggerElement: timelineEventEl, duration: 125, offset: 200 + additionalOffset})
 			.setTween(tween)
 			.addTo(controller);
 
-		additionalOffset += 45 * ($(window).height()/1200);
+		additionalOffset += 20 * ($(window).height()/1200);
 	});
 
 	$(window).resize(function() {
